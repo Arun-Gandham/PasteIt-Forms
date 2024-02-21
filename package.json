@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pasteit-run-json-script": "node ./commands/createJsonFiles.js"
   },
+  "bin": {
+    "pasteit-run-json-script": "node ./commands/createJsonFiles.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arun-Gandham/PasteIt-Forms.git"
