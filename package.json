@@ -8,7 +8,7 @@
     "pasteit-run-json-script": "node ./commands/createJsonFiles.js"
   },
   "bin": {
-    "pasteit-run-json-script": "node ./commands/createJsonFiles.js"
+    "pasteit-run-json-script": "./commands/createJsonFiles.js"
   },
   "repository": {
     "type": "git",
