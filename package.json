@@ -1,0 +1,37 @@
+{
+  "name": "pasteit",
+  "version": "1.0.0",
+  "description": "This package is used for generating the form from the dashboard to JSON files and using the forms in the applications. Some functions are created in this package to use the paste-it forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arun-Gandham/PasteIt-Forms.git"
+  },
+  "keywords": [
+    "PasteIt",
+    "Angular",
+    "react",
+    "Node",
+    "NPM",
+    "Arun",
+    "Gandham",
+    "Forms",
+    "Online",
+    "Forms",
+    "Darg",
+    "and",
+    "drop",
+    "Forms",
+    "Automatic",
+    "Forms"
+  ],
+  "author": "Arun Sai Gandham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arun-Gandham/PasteIt-Forms/issues"
+  },
+  "homepage": "https://github.com/Arun-Gandham/PasteIt-Forms#readme"
+}
