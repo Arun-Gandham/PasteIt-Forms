@@ -1,6 +1,6 @@
 {
   "name": "pasteit-forms",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package is used for generating the form from the dashboard to JSON files and using the forms in the applications. Some functions are created in this package to use the paste-it forms",
   "main": "index.js",
   "scripts": {
