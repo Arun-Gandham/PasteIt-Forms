@@ -22,7 +22,7 @@ function writeJSONFile(filePath, jsonData) {
 function main() {
   const rootPath = process.cwd(); // Get current working directory (root path)
   const jsonData = generateJSON(); // Generate JSON data
-  const jsonFilePath = path.join(rootPath, 'output.json'); // Construct file path
+  const jsonFilePath = path.join(rootPath+"/PasteIt-Forms", 'output.json'); // Construct file path
   writeJSONFile(jsonFilePath, jsonData); // Write JSON data to file
 }
 
