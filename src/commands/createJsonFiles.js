@@ -2,17 +2,25 @@
 
 const fs = require("fs").promises;
 const path = require("path");
-const { apiRoot } = require('../../config');
-const axios = require('axios');
+const { apiRoot } = require("../../config");
+const axios = require("axios");
 
 console.log(apiRoot);
 // Function to generate JSON data
 async function generateJSON() {
-  const response = await axios.get('https://dummyjson.com/products/1');
-  const data = {
-    data: "Hello, world!",
-    time: new Date().toISOString(),
-  };
+  let data;
+  await axios.get("https://dummyjson.com/products/1").then(response => {
+    // Extract the data from the response object
+    data = response.data;
+
+    // Log the data
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle errors
+    console.error('Error fetching data:', error.message);
+  });
+  // console.log(data);
   return JSON.stringify(data, null, 2);
 }
 
@@ -70,7 +78,7 @@ async function main() {
   await createFolder(rootPath); // Create directory if it doesn't exist
   console.log("New directory created.");
 
-  const jsonData = generateJSON(); // Generate JSON data
+  const jsonData = await generateJSON(); // Generate JSON data
   const jsonFilePath = path.join(rootPath, "output.json"); // Construct file path
   writeJSONFile(jsonFilePath, jsonData); // Write JSON data to file
 }
