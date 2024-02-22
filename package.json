@@ -4,8 +4,7 @@
   "description": "This package is used for generating the form from the dashboard to JSON files and using the forms in the applications. Some functions are created in this package to use the paste-it forms",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pasteit-run-json-script": "node ./src/commands/createJsonFiles.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "pasteit-run-json-script": "./src/commands/createJsonFiles.js"
@@ -13,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arun-Gandham/PasteIt-Forms.git"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   },
   "keywords": [
     "PasteIt",

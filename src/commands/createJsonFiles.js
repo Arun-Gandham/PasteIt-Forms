@@ -2,7 +2,9 @@
 
 const fs = require("fs").promises;
 const path = require("path");
+const { apiRoot } = require('../../config');
 
+console.log(apiRoot);
 // Function to generate JSON data
 function generateJSON() {
   const data = {
