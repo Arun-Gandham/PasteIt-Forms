@@ -3,13 +3,15 @@
 const fs = require("fs").promises;
 const path = require("path");
 const { apiRoot } = require('../../config');
+const axios = require('axios');
 
 console.log(apiRoot);
 // Function to generate JSON data
-function generateJSON() {
+async function generateJSON() {
+  const response = await axios.get('https://dummyjson.com/products/1');
   const data = {
-    message: "Hello, world!",
-    timestamp: new Date().toISOString(),
+    data: "Hello, world!",
+    time: new Date().toISOString(),
   };
   return JSON.stringify(data, null, 2);
 }
